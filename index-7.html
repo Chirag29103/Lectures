@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            text-align: center;
+            margin: 10px;
+        }
+        .div1:hover{
+            position: relative;
+            transform : rotate(40deg);
+            background:red;
+            animation: slide;
+            animation-duration: 3s;
+        }
+        .div2:hover{
+            transform : scale(1.25);
+            background:red;
+        }
+        .div3:hover{
+            transform : skewY(10deg);
+            background:red;
+        }
+        .div4:hover{
+            transform : translate(200px) rotate(360deg) scale(1.25) skewY(15deg);
+            transition-duration: 2s;
+            transition-timing-function: cubic-bezier(0.97,-0.52,0.4,1.24);
+            border-radius: 10%;
+            background:red;
+        }
+        span:hover{
+            /*font-size: 20px;*/
+            transform: scale(1.25);
+        }
+        @keyframes slide {
+            0%{
+                top:0;
+                left:0;
+            }
+            100%{
+                top:0;
+                left:1000px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div class="div1"><span>dfsdfghj</span></div>
+<div class="div2">asdfghjk</div>
+<div class="div3">dsfghjk</div>
+<div class="div4">adsfghjkl</div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>P1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        }
+        body{
+            background: rgb(245, 245, 240);
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            height: 10vh;
+            align-items: center;
+            padding: 0px 40px;
+            border-bottom: 1px solid black;
+        }
+        .bar{
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            color: darkslategray;
+        }
+        button{
+            background: black;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+        }
+        .left button{
+            font-size: 17px;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 9vh;
+            gap: 10px;
+            border-top: 1px solid black;
+            color: gray;
+        }
+        .main{
+            height: 80vh;
+            display: flex;
+            justify-content: space-between;
+        }
+        .left{
+            padding-left: 40px;
+            display: flex;
+            width: 50vw;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .right{
+            width: 50vh;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .left>h1{
+            font-size: 75px;
+            font-weight: 400;
+            font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Medium</h1>
+        <div class="bar">
+            <span>Our Story</span>
+            <span>Membership</span>
+            <span>Write</span>
+            <span>Sign in</span>
+            <button>Get Started</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="left">
+            <h1>Human <br>Stories & ideas</h1>
+            <p>A place to read, write and deepen your knowledge.</p>
+            <span>
+                <button>Start reading</button>
+            </span>
+        </div>
+        <div class="right">
+            <img src="https://miro.medium.com/v2/format:webp/4*SdjkdS98aKH76I8eD0_qjw.png">
+        </div>
+    </div>
+    <div class="footer">
+        <span>Help</span>
+        <span>Status</span>
+        <span>About</span>
+        <span>Careers</span>
+        <span>Press</span>
+        <span>Blog</span>
+        <span>Privacy</span>
+        <span>Terms</span>
+        <span>Text to speech</span>
+        <span>Teams</span>
+    </div>
+</body>
+</html>
